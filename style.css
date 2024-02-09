@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    
+
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    font: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+
+}
+
+
+.navigation .btnlogin-popup{
+    font-weight: 700;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    margin-left: 8px;
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 0px;
+    margin: 5px;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+}   
+body{
+ background: url(green-black-bugatti-veyron-with-black-yellow-paint.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid  gold;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 300px;
+    
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+.form-box h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid black;
+    
+ 
+
+
+}
+.input-box label{
+    position: absolute;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    font-weight: 800;
+    bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 2ms;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 37px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    left: 5%;
+    
+    
+    
+
+
+}
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    line-height: 40px;
+    color: white;
+
+}
+.remember-forgot{
+    font-weight: 300;
+    margin: -1px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+
+} 
+.remember-forgot a:hover{
+    text-decoration: dotted;
+}
+.btn{
+    width: 100%;
+    background: ;
+}
